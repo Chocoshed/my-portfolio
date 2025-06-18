@@ -66,15 +66,21 @@ $projects = [
     [
         'slug' => 'developper-battle',
         'detail_page' => true,
-        'image' => 'https://placehold.co/1280x800/3182CE/FFFFFF?text=Project+One',
+        'image' => './assets/images/projects/project-slug-1/screenshots/level-selection.png',
         'images' => [
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+1',
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+2',
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+3'
+            './assets/images/projects/project-slug-1/screenshots/login.png',
+            './assets/images/projects/project-slug-1/screenshots/intro.png',
+            './assets/images/projects/project-slug-1/screenshots/level-choice.gif',
+            './assets/images/projects/project-slug-1/screenshots/first-ennemi.png',
+            './assets/images/projects/project-slug-1/screenshots/first-ennemi2.png',
+            './assets/images/projects/project-slug-1/screenshots/first-battle.gif',
+            './assets/images/projects/project-slug-1/screenshots/second-battle.gif',
+            './assets/images/projects/project-slug-1/screenshots/fourgth-ennemi.png',
+            './assets/images/projects/project-slug-1/screenshots/end-demo.png',
         ],
         'tags' => ['React.js'],
         'live_url' => '#',
-        'code_url' => '#'
+        'code_url' => 'https://github.com/Chocoshed/react-developer-rpg-game'
     ],
     [
         'slug' => 'feffs',
