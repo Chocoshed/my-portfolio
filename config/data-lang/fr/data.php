@@ -21,6 +21,7 @@ function get_french_data()
         'nav_projects' => 'Projets',
         'nav_contact' => 'Me contacter !',
         'nav_resume' => 'CV',
+        'resume_url' => '',
 
         // Hero Section
         'hero_greeting' => 'Bonjour je suis',

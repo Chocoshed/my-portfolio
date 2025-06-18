@@ -21,6 +21,7 @@ function get_english_data()
             'nav_projects' => 'Projects',
             'nav_contact' => 'Contact me !',
             'nav_resume' => 'Resume',
+            'resume_url' => '',
 
             // Hero Section
             'hero_greeting' => 'Hello, I\'m',

@@ -21,6 +21,7 @@ function get_german_data()
         'nav_projects' => 'Projekte',
         'nav_contact' => 'Mich kontatktieren !',
         'nav_resume' => 'Lebenslauf',
+        'resume_url' => '',
 
         // Hero Section
         'hero_greeting' => 'Hallo, ich bin',

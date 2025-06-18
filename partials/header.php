@@ -9,7 +9,7 @@
                 <li><a href="index.php#skills"><?php echo htmlspecialchars($text['nav_skills']); ?></a></li>
                 <li><a href="index.php#experience"><?php echo htmlspecialchars($text['nav_experience']); ?></a></li>
                 <li><a href="index.php#projects"><?php echo htmlspecialchars($text['nav_projects']); ?></a></li>
-                <li><a href="?resume=true"><?php echo htmlspecialchars($text['nav_resume']); ?> <i class="fa-solid fa-download"></i></i></a></li>
+                <li><a href="<?php echo htmlspecialchars($text['resume_url'])?>"><?php echo htmlspecialchars($text['nav_resume']); ?><i class="fa-solid fa-download"></i></i></a></li>
             </ul>
         </nav>
         <div class="header-controls">
