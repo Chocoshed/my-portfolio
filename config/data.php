@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Include the language data
-require_once 'data-lang.php';
+require_once 'config/data-lang.php';
 
 // =================================================================
 //  LANGUAGE SELECTION
@@ -51,7 +51,7 @@ $social_links = [
 ];
 
 // $your_profile_image = "https://placehold.co/600x600/1a202c/ffffff?text=JF";
-$your_profile_image = "./images/pp.png";
+$your_profile_image = "./assets/images/pp.png";
 
 $skills = [
     ['name' => 'JavaScript (ES6+)', 'level' => 60],
@@ -92,10 +92,10 @@ $projects = [
     [
         'slug' => 'gestion-des-absences',
         'detail_page' => true,
-        'image' => 'https://placehold.co/1280x800/2F855A/FFFFFF?text=Project+Three',
+        'image' => './assets/images/projects/project-slug-3/screenshots/vu-synthese.png',
         'images' => [
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+1',
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+2',
+            './assets/images/projects/project-slug-3/screenshots/vu-synthese.png',
+            './assets/images/projects/project-slug-3/screenshots/vu-detail.png',
             'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+3'
         ],
         'tags' => ['Symfony', 'Tailwind', 'Javascript'],

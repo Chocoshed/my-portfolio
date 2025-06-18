@@ -57,7 +57,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #5a9bd8;
+  color: rgb(90.2, 155, 215.8);
 }
 
 .btn {
@@ -75,7 +75,7 @@ a:hover {
   color: #fff;
 }
 .btn-primary:hover {
-  background-color: #468fd3;
+  background-color: rgb(69.6, 142.5, 210.9);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(49, 130, 206, 0.3);
 }
@@ -84,7 +84,7 @@ a:hover {
   color: #fff;
 }
 .btn-secondary:hover {
-  background-color: #374358;
+  background-color: rgb(54.8076923077, 66.9871794872, 87.6923076923);
 }
 .btn-outline {
   background-color: transparent;
@@ -161,14 +161,14 @@ a:hover {
   display: block;
   font-size: 1.5rem;
   font-weight: 400;
-  color: #b0c0d6;
+  color: rgb(175.5795454545, 192.0113636364, 213.9204545455);
 }
 .hero .hero-title {
   font-size: 4rem;
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 1rem;
-  background: -webkit-linear-gradient(45deg, #3182CE, #83b4e2);
+  background: -webkit-linear-gradient(45deg, #3182CE, rgb(131.4, 180, 225.6));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -176,7 +176,7 @@ a:hover {
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto 2rem;
-  color: #c0cddf;
+  color: rgb(192.3863636364, 205.3409090909, 222.6136363636);
 }
 
 .about-content {
@@ -314,7 +314,7 @@ a:hover {
   font-size: 1rem;
   font-style: italic;
   margin-bottom: 0.5rem;
-  color: #9fb3cd;
+  color: rgb(158.7727272727, 178.6818181818, 205.2272727273);
 }
 
 .projects {
@@ -386,7 +386,7 @@ a:hover {
   border-top: 1px solid #4A5568;
 }
 .site-footer .footer-content p {
-  color: #7d98bc;
+  color: rgb(125.1590909091, 152.0227272727, 187.8409090909);
 }
 .site-footer .footer-content .footer-socials {
   margin-bottom: 1rem;

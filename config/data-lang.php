@@ -13,7 +13,7 @@ function get_text_data($lang = 'fr')
             // General
             'site_title' => 'Julie Fromageat',
             'site_description' => 'Bienvenue sur mon portfolio, vous pouvez me contacter pour plus de renseignement, ou juset pour laisser un petit mot :)',
-            'your_job_title' => 'Développeur Web Back-end',
+            'your_job_title' => 'Développeuse Web Back-end',
 
             // Navigation
             'nav_about' => 'À propos',
@@ -24,7 +24,7 @@ function get_text_data($lang = 'fr')
             'nav_resume' => 'CV',
 
             // Hero Section
-            'hero_greeting' => 'Bonjour, je suis',
+            'hero_greeting' => 'Bonjour je suis',
             'hero_button' => 'Voir mon travail',
 
             // About Section
@@ -63,18 +63,24 @@ function get_text_data($lang = 'fr')
 
             // Projects Section
             'projects_title' => 'Mes projets',
-            'project_btn_details' => 'Voir les détails',
-            'project_btn_demo' => 'Démo en ligne',
-            'project_btn_code' => 'Voir le code',
+            'project_btn_details' => 'Détails',
+            'project_btn_demo' => 'Démo',
+            'project_btn_code' => 'Le Code',
             'projects' => [
                 'developper-battle' => [
                     'title' => 'Developper Battle',
                     'description' => 'Un petit jeu éducatif créé dans le cadre d\'un projet de BUT. Inspiré des jeux Pokémon !',
-                    'detailed_description' => 'Le thème pour le jeux à créer était "initier à la programmation".
-                    J\'ai alors choisis de m\'inspirer d\'un jeu je mon enfance : Pokémon.
-                    Dans ce jeux on peut découvrir les bases de la programation en commencant par connaître la base des languages du développement web, tel que : HTML, CSS, JS, PHP, SQL, ...
-                    Pour le développement j\'ai décidé de sortir de ma zone de confort, le choix du language était libre, mon choix s\'est alors porté sur react.js"
-                    ',
+                    'detailed_description' => <<<EOT
+                        Le thème pour le jeux à créer était "initier à la programmation".
+
+                        J'ai alors choisis de m'inspirer d'un jeu je mon enfance : Pokémon.
+
+                        Dans ce jeux on peut découvrir les bases de la programation en commencant par connaître la base des languages du développement web, tel que : HTML, CSS, JS, PHP, SQL, ...
+
+                        Pour le développement j'ai décidé de sortir de ma zone de confort, le choix du language était libre, mon choix s'est alors porté sur react.js.
+
+                        J'ai aussi créé des gifs pour avoir rapidement et facilement des personnages animés, grace au site pixelart, [>ici<](https://www.pixilart.com/chocoshed/albums/game-378425) les gifs utilisés
+                        EOT,
                 ],
                 'feffs' => [
                     'title' => 'FEFFS - Application mobile',
@@ -85,7 +91,17 @@ function get_text_data($lang = 'fr')
                     'title' => 'Application de scolarité',
                     'description' => 'Application permettant de gérer les absences et consulter les promotions des étudiants par le personnel de l\'IUT. 
                     Application réalisé sur mes 2 années d\'alternance.',
-                    'detailed_description' => '',
+                    'detailed_description' => <<<EOT
+                        Cette application, une extension ajouté à un application existante, permet au personnel de l'IUT concerné de gérer les absences et les étudiants.
+                        Il y a plusieurs fonctionnalités : 
+                            - insérer des absences
+                            - insérer des justificatifs d'absences
+                            - visualiser les absences
+                            - voir les listes d'étudiants (liste + trombinoscope)
+
+                        Page synthèse des absences : 
+                        La page la plus complexe du projet, que j'ai du revoir plusieurs fois. Initiallement dévellopé uniquement en twig, fonctionne maintenant entièrement en javascript (car react n'est pas utilisé dans le projet)
+                        EOT,
                 ],
                 'app-tata-lolo' => [
                     'title' => 'Application de suivi de mission',
@@ -108,9 +124,9 @@ function get_text_data($lang = 'fr')
         ],
         'en' => [
             // General
-            'site_title' => 'John Doe - Web Developer',
-            'site_description' => 'Welcome to the portfolio of John Doe, a passionate web developer specializing in modern web technologies.',
-            'your_job_title' => 'Full-Stack Web Developer',
+            'site_title' => 'Welcome of the portfolio from a :',
+            'site_description' => 'Welcome to my portfolio, you can contact me for more infos :)',
+            'your_job_title' => 'Back-end web developper',
 
             // Navigation
             'nav_about' => 'About',
@@ -126,7 +142,9 @@ function get_text_data($lang = 'fr')
 
             // About Section
             'about_title' => 'About Me',
-            'about_me_text' => "I am a passionate and results-oriented web developer with over 5 years of experience in creating dynamic and user-friendly web applications. I have a strong foundation in front-end and back-end technologies, and I thrive on solving complex problems and learning new skills. My goal is to build products that are not only functional but also provide a great user experience.",
+            'about_me_text' => "First of all, thank you for wanting to know more about me! 
+            To begin with, yes, I went through the restaurant industry. It was a great experience with wonderful encounters. Today, it allows me to have a certain rigor and organization in my work, all while enjoying delicious pastries.
+            Trained in web development, what really interests me today is back-end development.",
             'contact_email' => 'Email',
             'contact_location' => 'Location',
 
@@ -137,17 +155,23 @@ function get_text_data($lang = 'fr')
             'experience_title' => 'Work Experience',
             'experience' => [
                 [
-                    'job_title' => 'Senior Web Developer',
-                    'company' => 'Tech Solutions Inc.',
-                    'period' => '2020 - Present',
-                    'description' => 'Leading the development of scalable web applications for various clients. Mentoring junior developers and improving internal coding standards.'
+                    'job_title' => 'Software Developer Apprentice',
+                    'company' => 'CARSAT Strasbourg',
+                    'period' => 'Sept. 2025 - Aug. 2028',
+                    'description' => 'To be continued ...'
                 ],
                 [
-                    'job_title' => 'Junior Web Developer',
-                    'company' => 'Web Crafters LLC',
-                    'period' => '2018 - 2020',
-                    'description' => 'Developed and maintained client websites using PHP, WordPress, and JavaScript. Collaborated with the design team to implement new features.'
-                ]
+                    'job_title' => 'Full-stack Web Developer Apprentice',
+                    'company' => 'IUT of Haguenau',
+                    'period' => 'Sept. 2023 - Aug. 2025',
+                    'description' => 'Development of the absence management application for the IUT.'
+                ],
+                [
+                    'job_title' => 'Barista',
+                    'company' => 'Cafés Henri',
+                    'period' => 'Sept. 2021 - Nov. 2021',
+                    'description' => 'This may not be THE job to highlight for my amazing career, but I love coffee (and tea), so I allow myself to show it :)'
+                ],
             ],
 
             // Projects Section
@@ -188,8 +212,8 @@ function get_text_data($lang = 'fr')
         'de' => [
             // General
             'site_title' => 'John Doe - Webentwickler',
-            'site_description' => 'Willkommen im Portfolio von John Doe, einem passionierten Webentwickler, der sich auf moderne Web-Technologien spezialisiert hat.',
-            'your_job_title' => 'Full-Stack-Webentwickler',
+            'site_description' => 'Willkommen im Portfolio',
+            'your_job_title' => 'Back-end-Webentwicklerin',
 
             // Navigation
             'nav_about' => 'Über mich',

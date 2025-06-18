@@ -1,6 +1,6 @@
 <?php
 // Include the data and language logic
-require_once 'data.php';
+require_once 'config/data.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo htmlspecialchars($current_lang); ?>">
@@ -10,7 +10,7 @@ require_once 'data.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($text['site_title']); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($text['site_description']); ?>">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@ require_once 'data.php';
             <div class="hero-content">
 
                 <h1 class="hero-title">
-                    <span class="hero-subtitle"><?php echo htmlspecialchars($text['hero_greeting']); ?> <?php echo htmlspecialchars($your_name); ?>.</span>
+                    <span class="hero-subtitle"><?php echo htmlspecialchars($text['hero_greeting']); ?></span>
                     <?php echo htmlspecialchars($text['your_job_title']); ?>
                 </h1>
                 <p class="hero-text"><?php echo htmlspecialchars($text['site_description']); ?></p>
@@ -119,7 +119,7 @@ require_once 'data.php';
     <?php include 'partials/footer.php'; ?>
 
     <script src="https://kit.fontawesome.com/f81b4bdbf1.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

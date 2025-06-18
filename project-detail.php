@@ -1,6 +1,12 @@
 <?php
 // Include the data file to get access to the $projects array
-require_once 'data.php';
+require_once 'config/data.php';
+require_once 'vendor/autoload.php';
+
+// Initialize Parsedown
+$parsedown = new Parsedown();
+// For security, enable safe mode to prevent XSS
+$parsedown->setSafeMode(true);
 
 // Get the project slug from the URL (e.g., project-detail.php?slug=e-commerce-platform)
 $project_slug = isset($_GET['slug']) ? $_GET['slug'] : '';
@@ -29,7 +35,7 @@ if ($current_project === null) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title; ?></title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
@@ -56,7 +62,7 @@ if ($current_project === null) {
                 </div>
 
                 <div class="project-detail-content">
-                    <p><?php echo nl2br(htmlspecialchars($current_project['detailed_description'])); ?></p>
+                    <?php echo $parsedown->text($current_project['detailed_description']); ?>
                 </div>
 
                 <!-- Links to the live demo and source code -->
