@@ -79,15 +79,18 @@ $projects = [
     [
         'slug' => 'feffs',
         'detail_page' => true,
-        'image' => 'https://placehold.co/1280x800/2D3748/FFFFFF?text=Project+Two',
+        'image' => './assets/images/projects/project-slug-2/affiche.png',
         'images' => [
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+1',
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+2',
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+3'
+            './assets/images/projects/project-slug-2/screenshots/login.jpg',
+            './assets/images/projects/project-slug-2/screenshots/home.jpg',
+            './assets/images/projects/project-slug-2/screenshots/events.jpg',
+            './assets/images/projects/project-slug-2/screenshots/calendar.jpg',
+            './assets/images/projects/project-slug-2/screenshots/tickets.jpg',
+            './assets/images/projects/project-slug-2/screenshots/pass.jpg',
         ],
         'tags' => ['React native'],
         'live_url' => '#',
-        'code_url' => '#'
+        'code_url' => 'https://github.com/WeJustDev/FEFFS'
     ],
     [
         'slug' => 'gestion-des-absences',
