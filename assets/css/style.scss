@@ -511,11 +511,11 @@ a {
 
 
 // =================================================================
-//  PROJECT DETAIL PAGE (NEW)
+//  PROJECT DETAIL PAGE
 // =================================================================
 
 .project-detail {
-    padding-top: 8rem; // To account for fixed header
+    padding-top: 8rem;
     padding-bottom: 6rem;
 
     .back-link {
@@ -582,16 +582,68 @@ a {
         gap: 1.5rem;
     }
 
-    .gallery-item img {
-        border-radius: 8px;
-        border: 2px solid $border-color;
-        transition: transform 0.3s ease, border-color 0.3s ease;
+    .gallery-item {
+        cursor: pointer;
+        img {
+            border-radius: 8px;
+            border: 2px solid $border-color;
+            transition: transform 0.3s ease, border-color 0.3s ease;
 
-        &:hover {
-            transform: scale(1.03);
-            border-color: $primary-color;
+            &:hover {
+                transform: scale(1.03);
+                border-color: $primary-color;
+            }
         }
     }
+}
+
+/* Modal image gallery*/
+// ...existing code...
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    transform: scale(0.95);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
 }
 
 
@@ -723,5 +775,11 @@ a {
 
     .project-detail-title {
         font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
     }
 }

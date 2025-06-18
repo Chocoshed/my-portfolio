@@ -74,7 +74,7 @@ if ($current_project === null) {
                 <!-- Screenshot gallery -->
                 <div class="project-gallery">
                     <h2 class="section-title">Screenshots</h2>
-                    <div class="gallery-grid">
+                    <div class="gallery-grid" id="gallery-grid">
                         <?php if (!empty($current_project['images'])): ?>
                             <?php foreach ($current_project['images'] as $image): ?>
                                 <div class="gallery-item">
@@ -95,11 +95,17 @@ if ($current_project === null) {
                 <a href="index.php#projects" class="btn btn-primary">Return to Portfolio</a>
             </section>
         <?php endif; ?>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">×</span>
+            <img class="modal-content" id="img01">
+        </div>
     </main>
 
     <?php include 'partials/footer.php'; ?>
 
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
