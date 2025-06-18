@@ -102,7 +102,7 @@ require_once 'config/data.php';
                             </div>
                             <div class="project-links">
                                 <?php if (isset($project['detail_page']) && $project['detail_page']): ?>
-                                    <a href="project-detail.php?slug=<?php echo htmlspecialchars($project['slug']); ?>" class="btn btn-secondary"><?php echo htmlspecialchars($text['project_btn_details']); ?></a>
+                                    <a href="<?php echo get_lang_url('project-detail.php?slug=' . htmlspecialchars($project['slug'])); ?>" class="btn btn-secondary"><?php echo htmlspecialchars($text['project_btn_details']); ?></a>
                                 <?php else : ?>
                                     <a href="<?php echo htmlspecialchars($project['live_url']); ?>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($text['project_btn_demo']); ?></a>
                                 <?php endif; ?>

@@ -1,10 +1,5 @@
 <?php
 
-// Start a session to store the selected language
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
 // Include the language data
 require_once 'config/data-lang.php';
 
@@ -15,20 +10,42 @@ require_once 'config/data-lang.php';
 $DEFAULT_LANG = 'fr';
 $ALLOWED_LANGS = ['fr', 'en', 'de'];
 
-// Check if a language is set in the URL query
-if (isset($_GET['lang']) && in_array($_GET['lang'], $ALLOWED_LANGS)) {
-    // Set the language in the session
-    $_SESSION['lang'] = $_GET['lang'];
-    // Redirect to the same page without the lang query parameter to have a clean URL
-    header('Location: ' . strtok($_SERVER["REQUEST_URI"], '?'));
-    exit;
+// Determine the current language from URL or default
+$current_lang = isset($_GET['lang']) && in_array($_GET['lang'], $ALLOWED_LANGS)
+    ? $_GET['lang']
+    : $DEFAULT_LANG;
+
+function get_lang_url($path = '', $lang = null)
+{
+    global $current_lang;
+    $lang = $lang ?? $current_lang;
+
+    // If path is empty, use current page
+    if ($path === '') {
+        $path = $_SERVER['REQUEST_URI'];
+    }
+
+    // Handle full URLs (if path contains the domain)
+    $url_parts = parse_url($path);
+    $path = isset($url_parts['path']) ? $url_parts['path'] : '';
+    $query = isset($url_parts['query']) ? $url_parts['query'] : '';
+    $fragment = isset($url_parts['fragment']) ? '#' . $url_parts['fragment'] : '';
+
+    // Parse query params
+    $params = [];
+    if ($query) {
+        parse_str($query, $params);
+    }
+
+    // Set the language param
+    $params['lang'] = $lang;
+
+    // Rebuild query string
+    $new_query = http_build_query($params);
+
+    // Rebuild URL
+    return $path . ($new_query ? '?' . $new_query : '') . $fragment;
 }
-
-// Check if resume is true in the URL query, check language, and dl resume for right langage
-// if(isset($_GET['resume']) $$ )
-
-// Get the language from the session, or use the default
-$current_lang = $_SESSION['lang'] ?? $DEFAULT_LANG;
 
 // Load all text data for the current language
 $text = get_text_data($current_lang);
@@ -105,7 +122,6 @@ $projects = [
         'images' => [
             './assets/images/projects/project-slug-3/screenshots/vu-synthese.png',
             './assets/images/projects/project-slug-3/screenshots/vu-detail.png',
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+3'
         ],
         'tags' => ['Symfony', 'Tailwind', 'Javascript'],
         'live_url' => '#',
@@ -116,9 +132,7 @@ $projects = [
         'detail_page' => true,
         'image' => 'https://placehold.co/1280x800/2F855A/FFFFFF?text=Project+Four',
         'images' => [
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+1',
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+2',
-            'https://placehold.co/1280x720/3182CE/FFFFFF?text=Screenshot+3'
+            
         ],
         'tags' => ['Laravel', 'Vue.js'],
         'live_url' => '#',

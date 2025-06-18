@@ -437,6 +437,12 @@ a:hover {
   font-size: 1.1rem;
   margin-bottom: 2.5rem;
 }
+.project-detail .project-detail-content h2 {
+  margin-top: 15px;
+}
+.project-detail .project-detail-content ul {
+  margin-left: 50px;
+}
 .project-detail .project-links-detail {
   margin-bottom: 4rem;
   display: flex;

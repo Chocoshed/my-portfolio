@@ -12,7 +12,7 @@
                     <a href="<?php echo htmlspecialchars($social_links['twitter']); ?>" target="_blank" rel="noopener noreferrer">Twitter</a>
                 <?php endif; ?>
             </div>
-            <p>&copy; <?php echo date("Y"); ?> <?php echo htmlspecialchars($your_name); ?>. All Rights Reserved.</p>
+            <p>&copy; <?php echo date("Y"); ?> <?php echo htmlspecialchars($your_name); ?>. <?php echo htmlspecialchars($text['footer_copyright']); ?></p>
         </div>
     </div>
 </footer>

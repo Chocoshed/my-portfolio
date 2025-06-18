@@ -51,7 +51,7 @@ if ($current_project === null) {
             <section class="project-detail container">
 
                 <!-- Link to go back to the main projects section -->
-                <a href="index.php#projects" class="back-link">&larr; Back to All Projects</a>
+                <a href="<?php echo get_lang_url('index.php#projects'); ?>" class="back-link"><i class="fa-solid fa-left-long"></i> <?php echo htmlspecialchars($text['project_detail_back']); ?></a>
 
                 <h1 class="project-detail-title"><?php echo htmlspecialchars($current_project['title']); ?></h1>
 
@@ -67,13 +67,13 @@ if ($current_project === null) {
 
                 <!-- Links to the live demo and source code -->
                 <div class="project-links-detail">
-                    <a href="<?php echo htmlspecialchars($current_project['live_url']); ?>" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                    <a href="<?php echo htmlspecialchars($current_project['code_url']); ?>" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Code</a>
+                    <!-- <a href="<?php echo htmlspecialchars($current_project['live_url']); ?>" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a> -->
+                    <a href="<?php echo htmlspecialchars($current_project['code_url']); ?>" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($text['project_detail_btn_code']); ?></a>
                 </div>
 
                 <!-- Screenshot gallery -->
                 <div class="project-gallery">
-                    <h2 class="section-title">Screenshots</h2>
+                    <h2 class="section-title"><?php echo htmlspecialchars($text['project_detail_screenshots']); ?></h2>
                     <div class="gallery-grid" id="gallery-grid">
                         <?php if (!empty($current_project['images'])): ?>
                             <?php foreach ($current_project['images'] as $image): ?>
@@ -82,7 +82,7 @@ if ($current_project === null) {
                                 </div>
                             <?php endforeach; ?>
                         <?php else: ?>
-                            <p>No screenshots are available for this project.</p>
+                            <p><?php echo htmlspecialchars($text['project_detail_no_screenshots']); ?></p>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -90,9 +90,9 @@ if ($current_project === null) {
         <?php else: // If no project was found, show an error message 
         ?>
             <section class="container" style="text-align: center; padding: 10rem 1.5rem;">
-                <h1 class="project-detail-title">404 - Project Not Found</h1>
-                <p style="margin-bottom: 2rem;">Sorry, the project you are looking for does not exist.</p>
-                <a href="index.php#projects" class="btn btn-primary">Return to Portfolio</a>
+                <h1 class="project-detail-title"><?php echo htmlspecialchars($text['project_not_found_title']); ?></h1>
+                <p style="margin-bottom: 2rem;"><?php echo htmlspecialchars($text['project_not_found_text']); ?></p>
+                <a href="index.php#projects" class="btn btn-primary"><?php echo htmlspecialchars($text['project_not_found_button']); ?></a>
             </section>
         <?php endif; ?>
 
@@ -105,6 +105,7 @@ if ($current_project === null) {
 
     <?php include 'partials/footer.php'; ?>
 
+    <script src="https://kit.fontawesome.com/f81b4bdbf1.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
