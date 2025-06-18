@@ -4,45 +4,47 @@ function get_all_german_project()
 {
     return [
         'developper-battle' => [
-            'title' => 'Developper Battle',
-            'description' => 'Un petit jeu éducatif créé dans le cadre d\'un projet de BUT. Inspiré des jeux Pokémon !',
+            'title' => 'Entwickler-Battle',
+            'description' => 'Ein kleines Lernspiel, das im Rahmen eines Projekts für den BUT erstellt wurde. Inspiriert von Pokémon-Spielen!',
             'detailed_description' => <<<EOT
-                            Le thème pour le jeux à créer était "initier à la programmation".
+                            Das Thema des Spiels war "Einführung in die Programmierung".
 
-                            J'ai alors choisis de m'inspirer d'un jeu je mon enfance : Pokémon.
+                            Ich habe mich von einem Spiel aus meiner Kindheit inspirieren lassen: Pokémon.
 
-                            Dans ce jeux on peut découvrir les bases de la programation en commencant par connaître la base des languages du développement web, tel que : HTML, CSS, JS, PHP, SQL, ...
+                            In diesem Spiel kann man die Grundlagen der Programmierung entdecken, angefangen mit den Grundlagen der Webentwicklungssprachen wie HTML, CSS, JS, PHP, SQL usw.
 
-                            Pour le développement j'ai décidé de sortir de ma zone de confort, le choix du language était libre, mon choix s'est alors porté sur react.js.
+                            Für die Entwicklung habe ich mich entschieden, meine Komfortzone zu verlassen. Die Wahl der Sprache war frei, und ich habe mich für React.js entschieden.
 
-                            J'ai aussi créé des gifs pour avoir rapidement et facilement des personnages animés, grace au site pixelart, [>ici<](https://www.pixilart.com/chocoshed/albums/game-378425) les gifs utilisés
+                            Ich habe auch GIFs erstellt, um schnell und einfach animierte Charaktere zu haben, dank der Website Pixelart. [>Hier<](https://www.pixilart.com/chocoshed/albums/game-378425) sind die verwendeten GIFs.
                             EOT,
         ],
         'feffs' => [
-            'title' => 'FEFFS - Application mobile',
-            'description' => 'Application réalisé dans le cadre d\'un projet de BUT. Celle ci devait permettre de voir et réserver les séances de projection.',
+            'title' => 'FEFFS - Mobile App',
+            'description' => 'Eine Anwendung, die im Rahmen eines Projekts für den BUT erstellt wurde. Sie sollte es ermöglichen, Projektionen anzuzeigen und zu reservieren.',
             'detailed_description' => '',
         ],
         'gestion-des-absences' => [
-            'title' => 'Application de scolarité',
-            'description' => 'Application permettant de gérer les absences et consulter les promotions des étudiants par le personnel de l\'IUT. 
-                        Application réalisé sur mes 2 années d\'alternance.',
+            'title' => 'Schulverwaltungsanwendung',
+            'description' => 'Eine Anwendung, die es dem Personal des IUT ermöglicht, Abwesenheiten zu verwalten und die Klassen der Studenten einzusehen. 
+                        Diese Anwendung wurde während meiner zweijährigen Ausbildung entwickelt.',
             'detailed_description' => <<<EOT
-                            Cette application, une extension ajouté à un application existante, permet au personnel de l'IUT concerné de gérer les absences et les étudiants.
-                            Il y a plusieurs fonctionnalités : 
-                                - insérer des absences
-                                - insérer des justificatifs d'absences
-                                - visualiser les absences
-                                - voir les listes d'étudiants (liste + trombinoscope)
+                            
+                            Diese Anwendung, eine Erweiterung einer bestehenden Anwendung, ermöglicht es dem zuständigen Personal des IUT, Abwesenheiten und Studenten zu verwalten.
 
-                            Page synthèse des absences : 
-                            La page la plus complexe du projet, que j'ai du revoir plusieurs fois. Initiallement dévellopé uniquement en twig, fonctionne maintenant entièrement en javascript (car react n'est pas utilisé dans le projet)
+                            ## Hauptfunktionen:
+                            - **Abwesenheiten eintragen**
+                            - **Abwesenheitsnachweise hinzufügen**
+                            - **Abwesenheiten anzeigen**
+                            - **Studentenlisten anzeigen** (Liste + Fotogalerie)
+
+                            ## Abwesenheitsübersicht
+                            Die komplexeste Seite des Projekts, die ich mehrmals überarbeiten musste. Ursprünglich nur in Twig entwickelt, funktioniert sie jetzt vollständig in JavaScript (da React im Projekt nicht verwendet wird).
                             EOT,
         ],
         'app-tata-lolo' => [
-            'title' => 'Application de suivi de mission',
-            'description' => '... En cour de réalisation ...
-                        Application réalisé pour une amie revenue manager. Celle-ci permet d\'avoir un suivi des missions par hôtel + un dashboard par hotel.',
+            'title' => 'Mission-Tracking-App',
+            'description' => '... In Bearbeitung ...
+                        Eine Anwendung, die für eine Freundin, eine Revenue-Managerin, entwickelt wurde. Sie ermöglicht die Verfolgung von Missionen pro Hotel sowie ein Dashboard für jedes Hotel.',
             'detailed_description' => ''
         ]
     ];

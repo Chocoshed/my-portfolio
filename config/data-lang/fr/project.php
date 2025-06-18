@@ -28,15 +28,17 @@ function get_all_french_project()
             'description' => 'Application permettant de gérer les absences et consulter les promotions des étudiants par le personnel de l\'IUT. 
                         Application réalisé sur mes 2 années d\'alternance.',
             'detailed_description' => <<<EOT
-                            Cette application, une extension ajouté à un application existante, permet au personnel de l'IUT concerné de gérer les absences et les étudiants.
-                            Il y a plusieurs fonctionnalités : 
-                                - insérer des absences
-                                - insérer des justificatifs d'absences
-                                - visualiser les absences
-                                - voir les listes d'étudiants (liste + trombinoscope)
+                            
+                            Cette application, une extension ajoutée à une application existante, permet au personnel de l'IUT concerné de gérer les absences et les étudiants.
 
-                            Page synthèse des absences : 
-                            La page la plus complexe du projet, que j'ai du revoir plusieurs fois. Initiallement dévellopé uniquement en twig, fonctionne maintenant entièrement en javascript (car react n'est pas utilisé dans le projet)
+                            ## Fonctionnalités principales :
+                            - **Insérer des absences**
+                            - **Insérer des justificatifs d'absences**
+                            - **Visualiser les absences**
+                            - **Voir les listes d'étudiants** (liste + trombinoscope)
+
+                            ## Page synthèse des absences
+                            La page la plus complexe du projet, que j'ai dû revoir plusieurs fois. Initialement développée uniquement en Twig, elle fonctionne maintenant entièrement en JavaScript (car React n'est pas utilisé dans le projet).
                             EOT,
         ],
         'app-tata-lolo' => [

@@ -46,11 +46,12 @@ function get_french_data()
         'projects_title' => 'Mes projets',
         'project_btn_details' => 'Détails',
         'project_btn_demo' => 'Démo',
-        'project_btn_code' => 'Le Code',
+        'project_btn_code' => 'Code',
         'projects' => $projects,
 
         // Project Detail Page
         'project_detail_back' => 'Retour à tous les projets',
+        'project_detail_btn_code' => 'Voir le code',
         'project_detail_screenshots' => 'Captures d’écran',
         'project_detail_no_screenshots' => 'Aucune capture d’écran n’est disponible pour ce projet.',
         'project_not_found_title' => '404 - Projet non trouvé',

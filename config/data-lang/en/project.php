@@ -4,45 +4,47 @@ function get_all_english_project()
 {
     return [
         'developper-battle' => [
-            'title' => 'Developper Battle',
-            'description' => 'Un petit jeu éducatif créé dans le cadre d\'un projet de BUT. Inspiré des jeux Pokémon !',
+            'title' => 'Developer Battle',
+            'description' => 'A small educational game created as part of a BUT project. Inspired by Pokémon games!',
             'detailed_description' => <<<EOT
-                            Le thème pour le jeux à créer était "initier à la programmation".
-
-                            J'ai alors choisis de m'inspirer d'un jeu je mon enfance : Pokémon.
-
-                            Dans ce jeux on peut découvrir les bases de la programation en commencant par connaître la base des languages du développement web, tel que : HTML, CSS, JS, PHP, SQL, ...
-
-                            Pour le développement j'ai décidé de sortir de ma zone de confort, le choix du language était libre, mon choix s'est alors porté sur react.js.
-
-                            J'ai aussi créé des gifs pour avoir rapidement et facilement des personnages animés, grace au site pixelart, [>ici<](https://www.pixilart.com/chocoshed/albums/game-378425) les gifs utilisés
+                            The theme for the game to create was "introduce programming".
+                            
+                            I chose to draw inspiration from a game from my childhood: Pokémon.
+                            
+                            In this game, players can discover the basics of programming, starting with understanding the foundation of web development languages such as: HTML, CSS, JS, PHP, SQL, ...
+                            
+                            For development, I decided to step out of my comfort zone. The language choice was free, so I went with React.js.
+                            
+                            I also created gifs to have quickly and easily animated characters, thanks to the pixelart site, [>here<](https://www.pixilart.com/chocoshed/albums/game-378425) are the gifs I used
                             EOT,
         ],
         'feffs' => [
-            'title' => 'FEFFS - Application mobile',
-            'description' => 'Application réalisé dans le cadre d\'un projet de BUT. Celle ci devait permettre de voir et réserver les séances de projection.',
+            'title' => 'FEFFS - Mobile Application',
+            'description' => 'Application created as part of a BUT project. It was designed to allow viewing and booking film screening sessions.',
             'detailed_description' => '',
         ],
         'gestion-des-absences' => [
-            'title' => 'Application de scolarité',
-            'description' => 'Application permettant de gérer les absences et consulter les promotions des étudiants par le personnel de l\'IUT. 
-                        Application réalisé sur mes 2 années d\'alternance.',
+            'title' => 'School Management Application',
+            'description' => 'Application for managing student absences and viewing student cohorts by IUT staff. 
+                        Developed during my 2 years of apprenticeship.',
             'detailed_description' => <<<EOT
-                            Cette application, une extension ajouté à un application existante, permet au personnel de l'IUT concerné de gérer les absences et les étudiants.
-                            Il y a plusieurs fonctionnalités : 
-                                - insérer des absences
-                                - insérer des justificatifs d'absences
-                                - visualiser les absences
-                                - voir les listes d'étudiants (liste + trombinoscope)
-
-                            Page synthèse des absences : 
-                            La page la plus complexe du projet, que j'ai du revoir plusieurs fois. Initiallement dévellopé uniquement en twig, fonctionne maintenant entièrement en javascript (car react n'est pas utilisé dans le projet)
+                            
+                            This application, an extension added to an existing application, allows relevant IUT staff to manage absences and students.
+                            
+                            ## Main features:
+                            - **Record absences**
+                            - **Submit absence justifications**
+                            - **View absences**
+                            - **View student lists** (list + photo directory)
+                            
+                            ## Absence summary page
+                            The most complex page of the project, which I had to revise several times. Initially developed solely in Twig, it now works entirely in JavaScript (as React is not used in the project).
                             EOT,
         ],
         'app-tata-lolo' => [
-            'title' => 'Application de suivi de mission',
-            'description' => '... En cour de réalisation ...
-                        Application réalisé pour une amie revenue manager. Celle-ci permet d\'avoir un suivi des missions par hôtel + un dashboard par hotel.',
+            'title' => 'Mission Tracking Application',
+            'description' => '... Currently in development ...
+                        Application created for a friend who works as a revenue manager. It provides mission tracking by hotel + a dashboard for each hotel.',
             'detailed_description' => ''
         ]
     ];

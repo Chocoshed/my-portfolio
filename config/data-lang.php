@@ -23,5 +23,5 @@ function get_text_data($lang = 'fr')
         'de' =>  $data_de,
     ];
 
-    return $text_data[$lang] ?? $text_data['en'];
+    return $text_data[$lang] ?? $text_data['fr'];
 }
