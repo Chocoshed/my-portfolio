@@ -68,7 +68,9 @@ if ($current_project === null) {
                 <!-- Links to the live demo and source code -->
                 <div class="project-links-detail">
                     <!-- <a href="<?php echo htmlspecialchars($current_project['live_url']); ?>" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a> -->
+                    <?php if (!empty($current_project['code_url'])): ?>
                     <a href="<?php echo htmlspecialchars($current_project['code_url']); ?>" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($text['project_detail_btn_code']); ?></a>
+                    <?php endif; ?>
                 </div>
 
                 <!-- Screenshot gallery -->

@@ -106,7 +106,9 @@ require_once 'config/data.php';
                                 <?php else : ?>
                                     <a href="<?php echo htmlspecialchars($project['live_url']); ?>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($text['project_btn_demo']); ?></a>
                                 <?php endif; ?>
+                                <?php if (!empty($project['code_url'])): ?>
                                 <a href="<?php echo htmlspecialchars($project['code_url']); ?>" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($text['project_btn_code']); ?></a>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>

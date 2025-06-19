@@ -9,7 +9,7 @@
                 <li><a href="<?php echo get_lang_url('index.php#skills'); ?>"><?php echo htmlspecialchars($text['nav_skills']); ?></a></li>
                 <li><a href="<?php echo get_lang_url('index.php#experience'); ?>"><?php echo htmlspecialchars($text['nav_experience']); ?></a></li>
                 <li><a href="<?php echo get_lang_url('index.php#projects'); ?>"><?php echo htmlspecialchars($text['nav_projects']); ?></a></li>
-                <li><a href="<?php echo get_lang_url($text['resume_url']); ?>"><i class="fa-solid fa-download"></i> <?php echo htmlspecialchars($text['nav_resume']); ?></a></li>
+                <li><a href="<?php echo get_lang_url($text['resume_url']); ?>" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i> <?php echo htmlspecialchars($text['nav_resume']); ?></a></li>
             </ul>
         </nav>
         <div class="header-controls">

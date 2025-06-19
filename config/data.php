@@ -74,6 +74,7 @@ $skills = [
     ['name' => 'JavaScript (ES6+)', 'level' => 60],
     ['name' => 'Symfony', 'level' => 70],
     ['name' => 'Laravel', 'level' => 40],
+    ['name' => 'React', 'level' => 30],
     ['name' => 'MySQL', 'level' => 60],
     ['name' => 'Git & GitHub', 'level' => 90],
 ];
@@ -111,8 +112,8 @@ $projects = [
             './assets/images/projects/project-slug-2/screenshots/tickets.jpg',
             './assets/images/projects/project-slug-2/screenshots/pass.jpg',
         ],
-        'tags' => ['React native'],
-        'live_url' => '#',
+        'tags' => ['React native', 'Expo'],
+        'live_url' => '',
         'code_url' => 'https://github.com/WeJustDev/FEFFS'
     ],
     [
@@ -124,19 +125,19 @@ $projects = [
             './assets/images/projects/project-slug-3/screenshots/vu-detail.png',
         ],
         'tags' => ['Symfony', 'Tailwind', 'Javascript'],
-        'live_url' => '#',
-        'code_url' => '#'
+        'live_url' => '',
+        'code_url' => ''
     ],
     [
         'slug' => 'app-tata-lolo',
         'detail_page' => true,
-        'image' => 'https://placehold.co/1280x800/2F855A/FFFFFF?text=Project+Four',
+        'image' => 'https://placehold.co/1280x800/2F855A/FFFFFF?text=A+venir',
         'images' => [
-            
+
         ],
         'tags' => ['Laravel', 'Vue.js'],
         'live_url' => '#',
-        'code_url' => '#'
+        'code_url' => ''
     ],
 ];
 
