@@ -11,7 +11,7 @@ function get_french_data()
     return [
         // General
         'site_title' => 'Julie Fromageat',
-        'site_description' => 'Bienvenue sur mon portfolio, vous pouvez me contacter pour plus de renseignement, ou juset pour laisser un petit mot :)',
+        'site_description' => 'Bienvenue sur mon portfolio, vous pouvez me contacter pour plus de renseignement, ou juste pour laisser un petit mot :)',
         'your_job_title' => 'Développeuse Web Back-end',
 
         // Navigation
