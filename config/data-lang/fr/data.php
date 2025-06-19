@@ -2,10 +2,12 @@
 
 include_once 'config/data-lang/fr/project.php';
 include_once 'config/data-lang/fr/experience.php';
+include_once 'config/data-lang/fr/diploma.php';
 
 function get_french_data()
 {
     $experiences = get_all_french_experience();
+    $diploma = get_all_french_diploma();
     $projects = get_all_french_project();
 
     return [
@@ -18,6 +20,7 @@ function get_french_data()
         'nav_about' => 'À propos',
         'nav_skills' => 'Compétences',
         'nav_experience' => 'Expérience',
+        'nav_diploma' => 'Diplôme',
         'nav_projects' => 'Projets',
         'nav_contact' => 'Me contacter !',
         'nav_resume' => 'CV',
@@ -41,6 +44,10 @@ function get_french_data()
         // Experience Section
         'experience_title' => 'Expérience professionnelle',
         'experience' => $experiences,
+
+        // Diploma Section
+        'diploma_title' => 'Diplôme',
+        'diploma' => $diploma,
 
         // Projects Section
         'projects_title' => 'Mes projets',

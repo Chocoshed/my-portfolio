@@ -2,10 +2,12 @@
 
 include_once 'config/data-lang/en/project.php';
 include_once 'config/data-lang/en/experience.php';
+include_once 'config/data-lang/en/diploma.php';
 
 function get_english_data()
 {
     $experiences = get_all_english_experience();
+    $diploma = get_all_english_diploma();
     $projects = get_all_english_project();
 
     return [
@@ -18,6 +20,7 @@ function get_english_data()
         'nav_about' => 'About',
         'nav_skills' => 'Skills',
         'nav_experience' => 'Experience',
+        'nav_diploma' => 'Diploma',
         'nav_projects' => 'Projects',
         'nav_contact' => 'Contact Me!',
         'nav_resume' => 'Resume',
@@ -41,6 +44,10 @@ function get_english_data()
         // Experience Section
         'experience_title' => 'Professional Experience',
         'experience' => $experiences,
+
+        // Diploma Section
+        'diploma_title' => 'Diploma',
+        'diploma' => $diploma,
 
         // Projects Section
         'projects_title' => 'My Projects',

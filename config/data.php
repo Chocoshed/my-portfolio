@@ -75,6 +75,7 @@ $skills = [
     ['name' => 'Symfony', 'level' => 70],
     ['name' => 'Laravel', 'level' => 40],
     ['name' => 'React', 'level' => 30],
+    ['name' => 'C#', 'level' => 20],
     ['name' => 'MySQL', 'level' => 60],
     ['name' => 'Git & GitHub', 'level' => 90],
 ];

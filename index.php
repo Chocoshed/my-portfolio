@@ -82,6 +82,22 @@ require_once 'config/data.php';
             </div>
         </section>
 
+        <!-- Diploma Section -->
+        <section id="diploma" class="diploma container">
+            <h2 class="section-title"><?php echo htmlspecialchars($text['diploma_title']); ?></h2>
+            <div class="timeline">
+                <?php foreach ($text['diploma'] as $diploma): ?>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3><?php echo htmlspecialchars($diploma['diploma_title']); ?></h3>
+                            <p class="company"><?php echo htmlspecialchars($diploma['company']); ?> | <?php echo htmlspecialchars($job['period']); ?></p>
+                            <p><?php echo htmlspecialchars($diploma['description']); ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </section>
+
 
         <!-- Projects Section -->
         <section id="projects" class="projects container">
@@ -107,7 +123,7 @@ require_once 'config/data.php';
                                     <a href="<?php echo htmlspecialchars($project['live_url']); ?>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($text['project_btn_demo']); ?></a>
                                 <?php endif; ?>
                                 <?php if (!empty($project['code_url'])): ?>
-                                <a href="<?php echo htmlspecialchars($project['code_url']); ?>" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($text['project_btn_code']); ?></a>
+                                    <a href="<?php echo htmlspecialchars($project['code_url']); ?>" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><?php echo htmlspecialchars($text['project_btn_code']); ?></a>
                                 <?php endif; ?>
                             </div>
                         </div>
