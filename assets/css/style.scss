@@ -156,6 +156,7 @@ a {
 
         li {
             margin-left: 2rem;
+            white-space: nowrap;
         }
 
         a {
@@ -181,9 +182,8 @@ a {
         }
     }
 
-    .header-controls{
-        display: flex;
-        gap: 20px;
+    .lang-switcher{
+        white-space: nowrap;
     }
 }
 
@@ -692,7 +692,7 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .section-title {
         font-size: 2rem;
     }
