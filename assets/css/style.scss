@@ -722,11 +722,13 @@ a {
             height: 100%;
 
             li {
-                margin: 2rem 0;
+                margin-left: 0 !important;
+                margin: 0.8rem 0;
             }
 
             a {
                 font-size: 1.5rem;
+                padding: 0.2rem;
             }
         }
     }
