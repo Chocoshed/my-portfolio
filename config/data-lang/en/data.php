@@ -32,11 +32,36 @@ function get_english_data()
 
         // About Section
         'about_title' => 'About Me',
-        'about_me_text' => 'Thank you for wanting to know more about me! 
-                To start with, yes, I did work in food service. It was a great experience with wonderful encounters. It has helped me develop a certain rigor and organization in my work, all while enjoying delicious pastries.
-                Trained in web development, what really interests me today is back-end development.',
+        'about_me_text' => 'Work-study engineering student with three years of hands-on web development with Symfony and Laravel. I take internal business applications from requirements gathering to acceptance testing, and approach them from their architecture: data model, layers, interfaces. I also have full-stack JavaScript and TypeScript experience from university projects with Angular and React.',
         'contact_email' => 'Email',
         'contact_location' => 'Location',
+
+        // What I bring
+        'strengths_title' => 'What I bring',
+        'strengths' => [
+            [
+                'title' => 'Architecture & design',
+                'description' => 'Data modelling (UML, Merise), MVC structure, separating routing, business logic and data access.',
+            ],
+            [
+                'title' => 'End-to-end projects',
+                'description' => 'From needs analysis with business teams to specifications, mockups and acceptance testing.',
+            ],
+            [
+                'title' => 'Agile teamwork',
+                'description' => 'Scrum iterations, Git and GitLab, coordination with business and operations teams.',
+            ],
+        ],
+
+        // Languages & interests
+        'languages_title' => 'Languages',
+        'languages' => [
+            ['name' => 'French', 'level' => 'Native', 'score' => 5],
+            ['name' => 'German', 'level' => 'Fluent (C1)', 'score' => 4],
+            ['name' => 'English', 'level' => 'Upper intermediate (B2)', 'score' => 3],
+        ],
+        'interests_title' => 'Interests',
+        'interests' => ['Baking', 'Hiking', 'Video games'],
 
         // Skills Section
         'skills_title' => 'My Skills',

@@ -49,6 +49,53 @@ require_once 'config/data.php';
                     </div>
                 </div>
             </div>
+
+            <?php if (!empty($text['strengths'])): ?>
+                <h3 class="about-subtitle"><?php echo htmlspecialchars($text['strengths_title']); ?></h3>
+                <div class="strengths-grid">
+                    <?php foreach ($text['strengths'] as $strength): ?>
+                        <div class="strength-card">
+                            <h4><?php echo htmlspecialchars($strength['title']); ?></h4>
+                            <p><?php echo htmlspecialchars($strength['description']); ?></p>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+
+            <?php if (!empty($text['languages']) || !empty($text['interests'])): ?>
+                <div class="about-extra">
+                    <?php if (!empty($text['languages'])): ?>
+                        <div class="about-extra-block">
+                            <h3 class="about-subtitle"><?php echo htmlspecialchars($text['languages_title']); ?></h3>
+                            <ul class="language-list">
+                                <?php foreach ($text['languages'] as $language): ?>
+                                    <li>
+                                        <span class="language-name"><?php echo htmlspecialchars($language['name']); ?></span>
+                                        <span class="language-level"><?php echo htmlspecialchars($language['level']); ?></span>
+                                        <?php if (isset($language['score'])): ?>
+                                            <div class="language-meter" aria-hidden="true">
+                                                <?php for ($i = 1; $i <= 5; $i++): ?>
+                                                    <span class="<?php echo $i <= $language['score'] ? 'is-filled' : ''; ?>"></span>
+                                                <?php endfor; ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+                    <?php if (!empty($text['interests'])): ?>
+                        <div class="about-extra-block">
+                            <h3 class="about-subtitle"><?php echo htmlspecialchars($text['interests_title']); ?></h3>
+                            <ul class="interest-list">
+                                <?php foreach ($text['interests'] as $interest): ?>
+                                    <li><?php echo htmlspecialchars($interest); ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
         </section>
 
         <!-- Skills Section -->
@@ -90,7 +137,7 @@ require_once 'config/data.php';
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <h3><?php echo htmlspecialchars($diploma['diploma_title']); ?></h3>
-                            <p class="company"><?php echo htmlspecialchars($diploma['company']); ?> | <?php echo htmlspecialchars($job['period']); ?></p>
+                            <p class="company"><?php echo htmlspecialchars($diploma['company']); ?> | <?php echo htmlspecialchars($diploma['period']); ?></p>
                             <p><?php echo htmlspecialchars($diploma['description']); ?></p>
                         </div>
                     </div>
