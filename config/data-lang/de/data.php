@@ -32,12 +32,36 @@ function get_german_data()
 
         // About Section
         'about_title' => 'Über mich',
-        'about_me_text' => 'Vielen Dank, dass Sie mehr über mich erfahren möchten! 
-                Zunächst einmal: Ja, ich habe in der Gastronomie gearbeitet. Es war eine tolle Erfahrung mit vielen Begegnungen. 
-                Diese Zeit hat mir geholfen, heute eine gewisse Strenge und Organisation in meiner Arbeit zu haben – und ich genieße immer noch gutes Gebäck.
-                Ich bin ausgebildete Webentwicklerin und interessiere mich besonders für die Back-End-Entwicklung.',
+        'about_me_text' => 'Ingenieurstudentin im dualen System mit drei Jahren Praxiserfahrung in der Webentwicklung mit Symfony und Laravel. Ich begleite interne Fachanwendungen von der Anforderungsaufnahme bis zur Abnahme und gehe sie über ihre Architektur an: Datenmodell, Schichten, Schnittstellen. Außerdem habe ich Full-Stack-Erfahrung mit JavaScript und TypeScript aus Hochschulprojekten mit Angular und React.',
         'contact_email' => 'E-Mail',
         'contact_location' => 'Standort',
+
+        // What I bring
+        'strengths_title' => 'Was ich mitbringe',
+        'strengths' => [
+            [
+                'title' => 'Architektur & Design',
+                'description' => 'Datenmodellierung (UML, Merise), MVC-Struktur, Trennung von Routing, Geschäftslogik und Datenzugriff.',
+            ],
+            [
+                'title' => 'Projekte von A bis Z',
+                'description' => 'Von der Anforderungsanalyse mit den Fachabteilungen über Spezifikationen und Mockups bis zur Abnahme.',
+            ],
+            [
+                'title' => 'Agile Teamarbeit',
+                'description' => 'Scrum-Iterationen, Git und GitLab, Abstimmung mit Fachabteilungen und Betrieb.',
+            ],
+        ],
+
+        // Languages & interests
+        'languages_title' => 'Sprachen',
+        'languages' => [
+            ['name' => 'Französisch', 'level' => 'Muttersprache', 'score' => 5],
+            ['name' => 'Deutsch', 'level' => 'Verhandlungssicher (C1)', 'score' => 4],
+            ['name' => 'Englisch', 'level' => 'Fließend (B2)', 'score' => 3],
+        ],
+        'interests_title' => 'Interessen',
+        'interests' => ['Backen', 'Wandern', 'Videospiele'],
 
         // Skills Section
         'skills_title' => 'Meine Fähigkeiten',

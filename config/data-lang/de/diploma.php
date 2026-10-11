@@ -4,22 +4,28 @@ function get_all_german_diploma()
 {
     return [
         [
-            'diploma_title' => 'Ingenieur',
-            'company' => 'ITII',
-            'period' => '2028 (laufend)',
-            'description' => 'Diplom-Ingenieur Fachrichtung Informatik und Informationssysteme'
+            'diploma_title' => 'Diplôme d\'ingénieur (Master-Niveau)',
+            'company' => 'Cnam, Eckbolsheim',
+            'period' => '2025 - 2028 (voraussichtlich)',
+            'description' => 'Ingenieurstudium Informatik, Schwerpunkt Informationssysteme, duales Studium'
         ],
         [
-            'diploma_title' => 'BUT MMI',
+            'diploma_title' => 'BUT Multimedia und Internet',
             'company' => 'IUT Haguenau',
-            'period' => '2025',
-            'description' => 'BUT Berufe im Multimedia und Internet, Schwerpunkt Webentwicklung und interaktive Systeme'
+            'period' => '2022 - 2025',
+            'description' => 'Bachelor Universitaire de Technologie Multimedia und Internet, Schwerpunkt Webentwicklung'
         ],
         [
-            'diploma_title' => 'BTS MHR',
-            'company' => 'Lycée Alexandre-Dumas',
-            'period' => '2021',
-            'description' => 'BTS Management in Hotellerie und Gastronomie, Schwerpunkt Teamleitung in der Küchenproduktion'
+            'diploma_title' => 'BTS Hotel- und Gaststättenmanagement',
+            'company' => 'Lycée Alexandre-Dumas, Illkirch',
+            'period' => '2019 - 2021',
+            'description' => '2-jähriges staatliches Diplom in Hotel- und Gaststättenmanagement'
+        ],
+        [
+            'diploma_title' => 'Baccalauréat scientifique',
+            'company' => 'Lycée Georges-Imbert, Sarre-Union',
+            'period' => '2017',
+            'description' => 'Abitur, naturwissenschaftlicher Zweig, Schwerpunkt Mathematik'
         ],
     ];
 }

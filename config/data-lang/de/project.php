@@ -76,29 +76,32 @@ function get_all_german_project()
                             Die komplexeste Seite des Projekts, die ich mehrmals überarbeiten musste. Ursprünglich nur in Twig entwickelt, funktioniert sie jetzt vollständig in JavaScript (da React im Projekt nicht verwendet wird).
                             EOT,
         ],
-        'app-tata-lolo' => [
-            'title' => 'Mission-Tracking-App',
-            'description' => '... In Bearbeitung ...
-                        Eine Anwendung, die für eine Freundin, eine Revenue-Managerin, entwickelt wurde. Sie ermöglicht die Verfolgung von Missionen pro Hotel sowie ein Dashboard für jedes Hotel.',
+        'pollution-tracker' => [
+            'title' => 'Pollution Tracker',
+            'description' => 'Full-Stack-Webanwendung zum Melden und Verfolgen von Umweltverschmutzungen, entwickelt mit Angular und einer Node.js-REST-API. 
+                        Entstanden im Rahmen eines Angular-Kursprojekts.',
             'detailed_description' => <<<EOT
-
-                    ## Was ist ein/e Revenue Manager/in?
-                    Ein/e Revenue Manager/in ist eine Person, die Hotels (oder andere Unternehmen) dabei hilft, mehr Geld zu verdienen, indem sie Preise und Buchungen optimal verwaltet. Ihre Aufgabe besteht darin, Verkäufe, Nachfrage und Konkurrenz zu analysieren, um zum Beispiel zu entscheiden, zu welchem Preis die Zimmer täglich verkauft werden sollen, um den Umsatz des Hotels zu optimieren. Es ist ein bisschen wie ein/e Dirigent/in für Preise und Verfügbarkeiten, damit das Hotel möglichst profitabel ist.
-
-                    ## Bedarf
-                    Diese Anwendung entsteht aus einem konkreten Bedarf einer Revenue Managerin in ihrem Arbeitsalltag. Sie möchte einen besseren Überblick über jedes Hotel, für das sie verantwortlich ist, sowie über die damit verbundenen Aufgaben haben.
-
-                    ## Geplante Funktionen:
-                    - Ein Dashboard pro Hotel (Umsatz, Umsatzentwicklung, Aufgaben, ...)
-                    - Zeiterfassung pro Hotel
-                    - Aufgaben anzeigen/hinzufügen können
-                    - Aufgaben nach Kategorien sortieren
-                    - Sehen, wer einer Aufgabe zugewiesen ist
-
-                    ## Technologien
-                    - React
-                    - Laravel
-                    EOT
-        ]
+                            
+                            Mit dieser Anwendung können Nutzer beobachtete Umweltverschmutzungen melden (illegale Müllablagerungen, Plastik, Wasser, Luft, Chemikalien...), die Meldungen anderer Nutzer einsehen und die für sie relevanten Meldungen verfolgen.
+                            
+                            ## Hauptfunktionen:
+                            - **Meldungen durchsuchen** (Kartenansicht + Detailseite mit Foto)
+                            - **Echtzeitsuche** (RxJS, 300 ms Debounce)
+                            - **Kombinierbare Filter** (Typ, Zeitraum, eigene Meldungen, Favoriten)
+                            - **Verschmutzungen melden, bearbeiten und löschen** (nur der Autor kann seine eigenen Meldungen bearbeiten oder löschen)
+                            - **Favoriten** (Zähler in der Kopfzeile, eigene Seite, Speicherung im localStorage)
+                            - **Authentifizierung** (Registrierung, Anmeldung, Abmeldung) und **Benutzerverwaltung**
+                            
+                            ## Frontend (Angular 20)
+                            Aufgebaut mit Standalone-Komponenten und einer Core-/Features-/Shared-Architektur. Der Anwendungszustand (Authentifizierung, Verschmutzungen, Favoriten) wird zentral mit **NGXS** verwaltet. Private Routen sind durch einen Guard geschützt, und ein HTTP-Interceptor hängt das JWT an die Anfragen an und behandelt abgelaufene Sitzungen. Das Meldeformular nutzt **Reactive Forms** mit eigenen Validatoren (GPS-Koordinaten, Datum, Foto-URL) und zeigt nach dem Absenden eine Zusammenfassung an.
+                            
+                            ## Backend (Node.js / Express)
+                            Eine REST-API mit **Sequelize** auf **PostgreSQL**, abgesichert durch **JWT** (HTTP-only-Cookie) und Passwort-Hashing mit **bcrypt**. Die API ist mit **Docker** containerisiert und wird über eine **GitHub Actions**-CI/CD-Pipeline auf **Render** bereitgestellt.
+                            
+                            ## Liste der Verschmutzungen
+                            Der komplexeste Teil des Projekts: Die Liste kombiniert mehrere Datenströme (Verschmutzungen, Suche, Filter, Favoriten und angemeldeter Nutzer) mit RxJS `combineLatest`, sodass sich die Anzeige sofort aktualisiert, sobald sich einer davon ändert.
+                            EOT,
+        ],
+        
     ];
 }

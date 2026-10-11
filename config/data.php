@@ -130,16 +130,21 @@ $projects = [
         'code_url' => ''
     ],
     [
-        'slug' => 'app-tata-lolo',
+        'slug' => 'pollution-tracker',
         'detail_page' => true,
-        'image' => 'https://placehold.co/1280x800/2F855A/FFFFFF?text=A+venir',
+        'image' => './assets/images/projects/project-slug-4/screenshots/liste.png',
         'images' => [
-
+            './assets/images/projects/project-slug-4/screenshots/liste.png',
+            './assets/images/projects/project-slug-4/screenshots/filtres.png',
+            './assets/images/projects/project-slug-4/screenshots/edition.png',
+            './assets/images/projects/project-slug-4/screenshots/favoris.png',
+            './assets/images/projects/project-slug-4/screenshots/utilisateurs.png',
         ],
-        'tags' => ['Laravel', 'Vue.js'],
-        'live_url' => '#',
-        'code_url' => ''
+        'tags' => ['Angular', 'TypeScript', 'NGXS', 'Node . js', 'PostgreSQL'],
+        'live_url' => '',
+        'code_url' => 'https://github.com/Chocoshed/projet_pollution_angular'
     ],
+
 ];
 
 // Combine the structural project data with the language-specific text

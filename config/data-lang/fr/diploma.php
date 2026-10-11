@@ -4,22 +4,28 @@ function get_all_french_diploma()
 {
     return [
         [
-            'diploma_title' => 'Ingénieur',
-            'company' => 'ITII',
-            'period' => '2028 (en cour)',
-            'description' => 'Diplôme d\'ingénieur Spécialité informatique et systèmes d\'information'
+            'diploma_title' => 'Diplôme d\'ingénieur',
+            'company' => 'Cnam, Eckbolsheim',
+            'period' => '2025 - 2028 (prévu)',
+            'description' => 'Diplôme d\'ingénieur en informatique, spécialité systèmes d\'information, en alternance'
         ],
         [
             'diploma_title' => 'BUT MMI',
             'company' => 'IUT de Haguenau',
-            'period' => '2025',
-            'description' => 'BUT Métiers du Multimedia et de l\'Internet parcour développement web et dispositifs interactifs'
+            'period' => '2022 - 2025',
+            'description' => 'BUT Métiers du multimédia et de l\'internet, parcours développement web'
         ],
         [
             'diploma_title' => 'BTS MHR',
-            'company' => 'Lycée Alexandr-Dumas',
-            'period' => '2021',
-            'description' => 'BTS Management en Hôtellerie et Restauration option management d\'une équipe de production culinaire'
+            'company' => 'Lycée Alexandre-Dumas, Illkirch',
+            'period' => '2019 - 2021',
+            'description' => 'BTS Management en hôtellerie et restauration'
+        ],
+        [
+            'diploma_title' => 'Baccalauréat scientifique',
+            'company' => 'Lycée Georges-Imbert, Sarre-Union',
+            'period' => '2017',
+            'description' => 'Baccalauréat scientifique, spécialité mathématiques'
         ],
     ];
 }

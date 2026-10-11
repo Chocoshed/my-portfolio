@@ -76,29 +76,31 @@ function get_all_french_project()
                     La page la plus complexe du projet, que j'ai dû revoir plusieurs fois. Initialement développée uniquement en Twig, elle fonctionne maintenant entièrement en JavaScript (car React n'est pas utilisé dans le projet).
                     EOT,
         ],
-        'app-tata-lolo' => [
-            'title' => 'Application de suivi de mission',
-            'description' => '... En cour de réalisation ...
-                        Application à réaliser pour une amie revenue manager. Celle-ci permet d\'avoir un suivi des missions par hôtel + un dashboard par hôtel.',
+        'pollution-tracker' => [
+            'title' => 'Pollution Tracker',
+            'description' => 'Application web full-stack de déclaration et de suivi des pollutions, développée avec Angular et une API REST Node.js. 
+                        Réalisée dans le cadre d\'un projet de cours Angular.',
             'detailed_description' => <<<EOT
-
-                    ## Qu'est ce qu'un/e revenue manager ?
-                    Un·e revenue manager est une personne qui aide les hôtels (ou d’autres entreprises) à gagner plus d’argent en gérant au mieux leurs prix et leurs réservations. Son travail consiste à analyser les ventes, la demande, et la concurrence pour décider, par exemple, à quel prix vendre les chambres chaque jour afin d’optimiser les revenus de l’hôtel. C’est un peu comme un·e chef d’orchestre des tarifs et des disponibilités pour que l’hôtel soit le plus rentable possible.
-
-                    ## Besoin
-                    Cette application part d'un besoin précis pour une revenue manager, dans ses missions quotidiennes. Elle aimerait avoir une meilleure vue d'ensemble de chaque hôtel dont elle a la charge, et aussi des missions lié à ceux-ci
-
-                    ## Ce qui est prévu : 
-                    - un tableau de bord par hôtel (CA, évolution de CA, missions, ...)
-                    - suivis du temps passé par hôtel
-                    - pouvoir visualiser/ajouter des missions
-                    - classer les missions par catégories
-                    - voir qui est assigné à une mission
-
-                    ## Technologies
-                    - React
-                    - Laravel
-                    EOT
-        ]
+                            
+                            Cette application permet aux utilisateurs de signaler les pollutions qu'ils observent (dépôts sauvages, plastique, eau, air, produits chimiques...), de consulter les signalements des autres utilisateurs et de suivre ceux qui les intéressent.
+                            
+                            ## Fonctionnalités principales :
+                            - **Consulter les signalements** (liste sous forme de cartes + page de détail avec photo)
+                            - **Recherche en temps réel** (RxJS, debounce de 300 ms)
+                            - **Filtres combinables** (type, période, mes signalements, mes favoris)
+                            - **Déclarer, modifier et supprimer une pollution** (seul l'auteur peut modifier ou supprimer ses propres signalements)
+                            - **Favoris** (compteur dans l'en-tête, page dédiée, sauvegarde dans le localStorage)
+                            - **Authentification** (inscription, connexion, déconnexion) et **gestion des utilisateurs**
+                            
+                            ## Front-end (Angular 20)
+                            Développé avec des composants standalone et une architecture core / features / shared. L'état de l'application (authentification, pollutions, favoris) est centralisé avec **NGXS**. Les routes privées sont protégées par un guard, et un intercepteur HTTP ajoute le JWT aux requêtes et gère les sessions expirées. Le formulaire de déclaration utilise les **Reactive Forms** avec des validateurs personnalisés (coordonnées GPS, date, URL de la photo) et affiche un récapitulatif après l'envoi.
+                            
+                            ## Back-end (Node.js / Express)
+                            Une API REST avec **Sequelize** sur **PostgreSQL**, sécurisée par **JWT** (cookie HTTP-only) et par le hashage des mots de passe avec **bcrypt**. L'API est conteneurisée avec **Docker** et déployée sur **Render** via un pipeline CI/CD **GitHub Actions**.
+                            
+                            ## Liste des pollutions
+                            La partie la plus complexe du projet : la liste combine plusieurs flux de données (pollutions, recherche, filtres, favoris et utilisateur connecté) avec `combineLatest` de RxJS, ce qui met l'affichage à jour instantanément dès que l'un d'eux change.
+                            EOT,
+        ],
     ];
 }

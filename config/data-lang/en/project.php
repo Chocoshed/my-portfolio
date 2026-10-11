@@ -76,29 +76,31 @@ function get_all_english_project()
                             The most complex page of the project, which I had to revise several times. Initially developed solely in Twig, it now works entirely in JavaScript (as React is not used in the project).
                             EOT,
         ],
-        'app-tata-lolo' => [
-            'title' => 'Mission Tracking Application',
-            'description' => '... Currently in development ...
-                        Application created for a friend who works as a revenue manager. It provides mission tracking by hotel + a dashboard for each hotel.',
+        'pollution-tracker' => [
+            'title' => 'Pollution Tracker',
+            'description' => 'Full-stack web application for reporting and tracking pollution sites, built with Angular and a Node.js REST API. 
+                        Developed as part of an Angular course project.',
             'detailed_description' => <<<EOT
-
-                    ## What is a revenue manager?
-                    A revenue manager is someone who helps hotels (or other businesses) earn more money by optimally managing their prices and bookings. Their job is to analyze sales, demand, and competition to decide, for example, at what price to sell rooms each day in order to optimize the hotel's revenue. It's a bit like being a conductor for rates and availability so that the hotel is as profitable as possible.
-
-                    ## Need
-                    This application arises from a specific need for a revenue manager in their daily tasks. They would like to have a better overview of each hotel they are responsible for, as well as the tasks related to them.
-
-                    ## Planned features:
-                    - a dashboard for each hotel (revenue, revenue trends, tasks, ...)
-                    - tracking time spent per hotel
-                    - ability to view/add tasks
-                    - categorize tasks
-                    - see who is assigned to a task
-
-                    ## Technologies
-                    - React
-                    - Laravel
-                    EOT
-        ]
+                            
+                            This application allows users to report pollution they observe (illegal dumping, plastic, water, air, chemical...), browse the reports of other users and keep track of the ones they care about.
+                            
+                            ## Main features:
+                            - **Browse pollution reports** (card list + detail page with photo)
+                            - **Real-time search** (RxJS, 300 ms debounce)
+                            - **Combinable filters** (type, date range, my reports, my favourites)
+                            - **Report, edit and delete pollution** (only the author can edit or delete their own reports)
+                            - **Favourites** (counter in the header, dedicated page, saved in localStorage)
+                            - **Authentication** (sign up, log in, log out) and **user management**
+                            
+                            ## Front-end (Angular 20)
+                            Built with standalone components and a core / features / shared architecture. Application state (authentication, pollution, favourites) is centralised with **NGXS**. Private routes are protected by a guard, and an HTTP interceptor attaches the JWT and handles expired sessions. The report form uses **Reactive Forms** with custom validators (GPS coordinates, date, photo URL) and shows a summary once submitted.
+                            
+                            ## Back-end (Node.js / Express)
+                            A REST API with **Sequelize** on **PostgreSQL**, secured with **JWT** (HTTP-only cookie) and **bcrypt** password hashing. The API is containerised with **Docker** and deployed to **Render** through a **GitHub Actions** CI/CD pipeline.
+                            
+                            ## Pollution list
+                            The most complex part of the project: the list combines several data streams (pollution, search, filters, favourites and the logged-in user) with RxJS `combineLatest`, so the display updates instantly whenever any of them changes.
+                            EOT,
+        ],
     ];
 }

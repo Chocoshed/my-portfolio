@@ -32,11 +32,36 @@ function get_french_data()
 
         // About Section
         'about_title' => 'À propos de moi',
-        'about_me_text' => 'Déjà merci à toi de vouloir en savoir d\'avantages sur moi ! 
-                Pour commencer, oui je suis passée par la case restauration. C\'était une belle expérience, de belles rencontres. Cela me permet aujourd\'hui d\'avoir une certaine rigueur et organisation dans mon travail, tout en mangeant de bonnes patisseries.
-                Formé pour le développement web, aujourd\'hui ce qui m\'intéresse vraiment : le développement back-end.',
+        'about_me_text' => 'Élève ingénieure en alternance, avec trois ans d\'expérience pratique en développement web avec Symfony et Laravel. J\'accompagne des applications métier internes de l\'expression des besoins jusqu\'à la recette, en les abordant par leur architecture : modèle de données, couches, interfaces. J\'ai aussi une expérience full-stack JavaScript et TypeScript acquise lors de projets universitaires avec Angular et React.',
         'contact_email' => 'Email',
         'contact_location' => 'Localisation',
+
+        // What I bring
+        'strengths_title' => 'Ce que j\'apporte',
+        'strengths' => [
+            [
+                'title' => 'Architecture & conception',
+                'description' => 'Modélisation des données (UML, Merise), structure MVC, séparation du routage, de la logique métier et de l\'accès aux données.',
+            ],
+            [
+                'title' => 'Projets de bout en bout',
+                'description' => 'De l\'analyse des besoins avec les équipes métier aux spécifications, maquettes et à la recette.',
+            ],
+            [
+                'title' => 'Travail en équipe agile',
+                'description' => 'Itérations Scrum, Git et GitLab, coordination avec les équipes métier et d\'exploitation.',
+            ],
+        ],
+
+        // Languages & interests
+        'languages_title' => 'Langues',
+        'languages' => [
+            ['name' => 'Français', 'level' => 'Langue maternelle', 'score' => 5],
+            ['name' => 'Allemand', 'level' => 'Courant (C1)', 'score' => 4],
+            ['name' => 'Anglais', 'level' => 'Intermédiaire avancé (B2)', 'score' => 3],
+        ],
+        'interests_title' => 'Centres d\'intérêt',
+        'interests' => ['Pâtisserie', 'Randonnée', 'Jeux vidéo'],
 
         // Skills Section
         'skills_title' => 'Mes compétences',
