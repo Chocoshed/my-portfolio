@@ -32,7 +32,7 @@ function get_english_data()
 
         // About Section
         'about_title' => 'About Me',
-        'about_me_text' => 'Work-study engineering student with three years of hands-on web development with Symfony and Laravel. I take internal business applications from requirements gathering to acceptance testing, and approach them from their architecture: data model, layers, interfaces. I also have full-stack JavaScript and TypeScript experience from university projects with Angular and React.',
+        'about_me_text' => 'Engineering apprentice with three years of hands-on web development with Symfony and Laravel. I take internal business applications from requirements gathering to acceptance testing, and approach them from their architecture: data model, layers, interfaces. I also have full-stack JavaScript and TypeScript experience from university projects with Angular and React.',
         'contact_email' => 'Email',
         'contact_location' => 'Location',
 

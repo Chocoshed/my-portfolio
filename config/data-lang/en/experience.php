@@ -4,13 +4,13 @@ function get_all_english_experience()
 {
     return [
         [
-            'job_title' => 'Software Designer & Developer · work-study',
+            'job_title' => 'Software Designer & Developer · apprenticeship',
             'company' => 'Carsat Alsace-Moselle, Strasbourg',
             'period' => 'Sept. 2025 - present',
             'description' => 'Developing internal business applications across their lifecycle, from needs analysis to handover to operations. Translating business needs into specifications, technical designs and data models, designing UI mockups and running acceptance testing with end users. Building with Laravel (MVC, ORM, middleware); getting started with C# / ASP.NET.'
         ],
         [
-            'job_title' => 'Web Developer · work-study',
+            'job_title' => 'Web Developer · apprenticeship',
             'company' => 'IUT Haguenau, University of Strasbourg',
             'period' => 'Sept. 2023 - Aug. 2025',
             'description' => 'Designed and developed a student absence management web app with Symfony, and contributed to its evolution through regular exchanges with users.'

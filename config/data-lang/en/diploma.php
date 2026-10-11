@@ -7,13 +7,13 @@ function get_all_english_diploma()
             'diploma_title' => 'Diplôme d\'ingénieur (Master\'s level)',
             'company' => 'Cnam, Eckbolsheim',
             'period' => '2025 - 2028 (expected)',
-            'description' => 'Engineering degree in Computer Science – Information Systems, work-study programme'
+            'description' => 'Engineering degree in Computer Science – Information Systems, apprenticeship'
         ],
         [
             'diploma_title' => 'BUT Multimedia & Internet',
             'company' => 'IUT Haguenau',
             'period' => '2022 - 2025',
-            'description' => 'Bachelor of Multimedia and Internet, web development track'
+            'description' => 'Bachelor of Multimedia and Internet, web development track, apprenticeship'
         ],
         [
             'diploma_title' => 'BTS Hospitality & Restaurant Management',
